@@ -10,6 +10,6 @@ class ApplicationController < Sinatra::Base
   end 
   
   post '/recipes' do 
-    @recipe = Recipes.new()
+    @recipe = Recipes.create(params)
   end 
 end
